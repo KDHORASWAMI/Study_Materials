@@ -1,0 +1,41 @@
+Interfaces - Set, List,Queue, Dequeue , Map
+Clsaa		- ArrayLst, LinkedList, Vector, HashSet, LinkedHashSet, TreeSet
+ArrayList :
+
+add()
+remove()
+sixe()
+toArray()
+clear()
+isEmpty()
+
+LinkedList :
+
+add()
+clear()
+remove()
+Size()
+isEmpty()
+toArray()
+boolean contains()
+
+HashSet():
+
+add()
+contains()
+isEmpty()
+size()
+
+TreeSet:
+add()
+clear()
+remove()
+Size()
+isEmpty()
+
+
+
+
+
+
+

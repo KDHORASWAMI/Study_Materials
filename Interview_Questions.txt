@@ -1,0 +1,91 @@
+Interview Quesions:
+
+1. get("")- it will wait till all the elements are loaded
+	native("")- it won't wait til all the elements get loaded 
+		 Back,forward, refresh  methods available exra.
+2. Quit - it will close all the browsrs 
+	close() - it closes particular browser which in focus.
+3. implicit wait -
+	Begining 
+	Ecplicit wait - Specific to particular elements
+4. Frames - Selenium can't work on frames directly
+	driver.switchTo().frme(id)  - id , name, frame webelement
+5. Handle 3 childwindow?
+	selenium will be on first window (which it opens)
+	Set <String> s = Driver.getWindowHandles();
+	String window3 = it.next();
+	
+	driver.switchTo().window(window3);
+6. Http scertificates
+	DesiredCapabilities cap = DesiredCapabilities.chrome();
+	// et ACCEPT_SSL_CERTS variable to true
+	cap.setCapabilities(CapabilitiesType.ACCEPT_SSL_CERTS,true);
+	
+7. Locators
+	Xpath,css,id, classname,linkText,name
+8. Syntax - Xpath ,CSS
+	Xpath - //tagname[@attribute='value'];
+	CSS- tagname[id='seff']
+9. How to use Contains reular expression to Xpath
+	//tagname[contains(@id,'uo')];
+	
+10. HOw to use regular expression to CSS
+
+	tagname[id*='uo'];
+11. To handle drop down
+	SELECT
+12. What is the method to check if checkbox is selected?
+	Driver.findElement(By.id("")).isSelected;
+13. How to validate if element is visible or hidden in webpges?
+
+	driver.findElement("locator").isDisplayed();
+14. Get count of similar objects list in the webpage
+
+	class name = abc
+	Driver.findElements(By.classname("abc")).size();
+15. Importance of DesiredCapabilities / Selenium Grid
+	DesireCapabilities use to set the brower properties
+	Dristributes tests across multiple machines /OS
+16. Entering ext in caps lock
+
+	driver.findElement(By.id("ee")).endkeys(Keys.SHIFT,"hello");
+	
+17. MOuse over on the webelement on page
+	Action a = new Actio(driver);
+	a.moveToElemen("locator").build.perform();
+18. Java alerts.
+	iver.switchTo().alert();
+19. Get link count in the page	
+	driver.findElements(By.tagnme("a")).size;
+20. Validate if we are navigated to child window successfully?
+
+	driver.getTitle();
+21. Absolute Xpth - html/body - to actual element
+	Relative- 
+22. What driver is must to run tests in firefox browser?
+	Geckodriver- 
+23. chrome
+	chrome driver
+24. //parent/child
+25. How to set driver in firefox nd chrome browsers?
+
+	system.serProperties("webdriver.chrome.driver","path to chrome driver");
+26. findElement and findElements
+27.List of any  methods in explicit wait?
+
+	visibilityOfElement locted, Invisibilityof ElementLocated
+	
+28. T
+
+https://www.automationtestinginsider.com/2019/10/selenium-questions-part5-selenium.html  - > Exceptions
+
+CAPTCHA
+Code reading scenarios
+
+https://www.automationtestinginsider.com/p/selenium-quesansw.html  - for best interview questons
+
+REST assured and postman
+	
+
+	
+	

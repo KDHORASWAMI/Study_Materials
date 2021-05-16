@@ -1,0 +1,70 @@
+ATLASSIAN 
+JIRA :
+
+1. Incident management tool 
+
+Shadow DOM
+
+1. DOM  (Document Object Model ) - is tree representation of HTML nodes.
+2. Shadow DOM is subset of DOM.
+3.
+
+GIT , SVN
+
+GIT:
+	Version control system
+	
+1. Downlod GIT frm oficial website.
+2. Install GIT in the system.
+3. while installing select comad fromt for better experience.
+
+GITHUB - central repository
+Importance of GITHUB and is uses:
+
+1. version contol system.
+Tortoise Git- to talk to GITHUB
+
+Command fromt
+tortoise Git-
+Eclips-
+Intellij-
+
+GIT comands -> https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+GIT commands:
+	// Configure the author nme and emil address to be used with your commits
+- git config --global user.name "Dhoraswami"
+- git config --global user.email "kdhoraswami@gmail.com"
+
+	Give the project file pathe in commandfromt
+- c GITHUB
+
+You have a code 
+Initialize it as GIT repository  
+- git init
+   stash(staging) -> commit -> GITHUB
+ We hve to move code for local to stash
+- git add *   -> to add all the code to stash(stage)
+- git status   -> to fing status  of all the flie which are added to stash
+- git commit -m "first commit"
+- git remote add origin https://github.com/KDHORASWAMI/E2E-projrct-selenium.git    
+	-> to connect local syatem to github repository ..
+	-> When we create repositor we will be at master branch by default
+- git clone https://github.com/KDHORASWAMI/E2E-projrct-selenium.git
+- git push origin master
+- git pull 
+- git checkout -b develop   - create branch
+- git chekout develp  -> to switch to develop branch
+
+
+// Excercise :
+
+-- git init
+-- git add *    -> to add to the stage
+-- git status 	-> to check status
+-- git commit -m " any message"   
+-- git remote add origin "http....." -> get it from huthub repository
+-- git push origin master    -> to move to github
+
+-- git pull 		-> get from github
+

@@ -1,0 +1,62 @@
+Tell me about yourself :
+	experience
+		manual + Automation (60 to 70)
+		confortle with manual testing - writing test cses and designing buglife cycle and defect life cycle, test preparation and test planning
+ Tools and technologies:
+	Automation technoloies
+		selenium
+		work on existing framework
+	Different framework aproaches
+		Data-driven , keyword driven and hybred and good at POM
+	Versions of selenium (3.7)and browsers
+	Most preferred language is Java
+	using selenium webdriver with Java
+	very good experience inTDD frameworks like TestNG
+	v g e on CI tools and tehnologies like JENKINS and maven
+	designing framework and designing of the compnens
+	
+Roles and responsibilities:
+1. QA engineer
+2. i am involved into front end automation
+3. for front end automation we are using Selenium webdriver grid wth Java binding
+4. prety much comfortable with java and prety much comfortable with all OOPS concepts.
+5. Comfortable with all the selenium concepts like Action classes , select classes and locators
+6. Out of 500 testcase we have automated around 350 to 400 testcases
+7. initially lot of manual testng were there and we picked those testcase and converted into automaton.
+8. 
+
+https://www.youtube.com/watch?v=Lx6ZTEUD4_E&ab_channel=NaveenAutomationLabs     9:09 
+
+https://www.youtube.com/watch?v=x9vAgJSq2O0&ab_channel=NaveenAutomationLabs
+
+Understanding and Analyzing the Application Under Test in terms of Object Identification.
+Creating Test scenarios and Collecting Test Data.
+Creating Test Automation Resources (Function Libraries etc…).
+Implementing JUnit or TestNG Test Automation framework and developing automation infrastructure.
+Creating and enhancing Test Cases (Test Scripts) using Element locators, WebDriver methods, Java programming concepts and TestNG Annotations.
+Creating reusable components.
+Handling duplicate objects and dynamic objects using index property and Regular expressions.
+Collecting Test Data for Data Driven Testing.
+Creating Test Cases (Test Scripts) using Selenium Webdriver, Java and TestNG Annotations.
+Parameterization, Synchronization and define Test results.
+Error Handling, Adding comments.
+Creating Data driven Tests and Running through framework.
+Debugging and Running Tests
+Analyzing Test Results
+Defect Reporting and Tracking using any Defect Management Tool.
+Test Reporting
+Modifying Tests and performing Re & Regression Testing.
+Tracking Defects and Select Test cases for Re & Regression Testing.
+Modifying Test Automation Resources and Maintenance of Resources.
+
+Selenium Webdriver, Java
+POM - Hybrid
+Pages
+Test
+Excel
+Reports
+Util
+Screenshot
+Maven
+GIT
+Jenkins

@@ -1,0 +1,63 @@
+Maven :
+
+Open source build tool 
+used to manage and build any java based project 
+Project Object model (POM)
+It take care of the following 
+	Builds
+	Dependencies
+	Reports
+	Distribution
+	Releases
+	Mailing list
+Primarily used for automation
+
+Maven Repository:
+ Local   - present in systen (PC)
+ Remote  - server machine
+ Centrol  - internet
+ Concept :
+ 
+ Build life cycle :
+ Default : handles project deloyment
+ Clean : hndles project cleaning
+ Site : handles the creation of project sites documentstion
+ 
+ Build phases or stages:
+ compile
+ tesst-compiletest
+ test
+ package
+ intigration- test
+ verify
+ install
+ deploy
+ 
+ Advantages :
+1.  Manage all the process , such as building , documentation, releasing and distribution in project management
+2. Simplifies the process of project building. It increases the performance of the project and building process
+3. Downloading jar files and other dependencies is done automaticaly
+4. Easy acess to all the required informtion 
+5. easy to add dependencies 
+
+POM contains following configurations:
+Dependencies
+Developers and contributors
+plugins
+Plugin configurationsresources
+
+Advantages of Maven Artifact:
+1. Maven artifact refers to a file , using a JAR that gets deployed to a maven repository
+2. The tool creates one or more artifacts such as a compiled JAR and source JAR.
+3. Every artifact has its GroupID, an Artifact ID and a version
+these three together identifies the artifact
+
+Jenkins :
+
+1. Install Jenkins
+2. Install different plugins - Green Ball , Email Extention plugin, 
+
+if we set the parameters in jenkins 
+Goals and Opions : clean install -DxmlFiles=$XML -Dbrowser=$Browser -Durl=$URL
+
+ 

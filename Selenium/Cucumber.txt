@@ -1,0 +1,51 @@
+Cucumber :
+
+Plan 
+- Importance of Behvior driven development
+- Framework Architecture and it's core functionlties
+- Selenium intigration with cucumber
+
+-Tightly coupled with BDD
+BDD :
+One of the best approach used in agail methodology
+- 
+Example----
+GIVEN : An Account with zero balance
+WHEN : Naviate to creditcard payment section nd clink 
+THEN : it should throw error message
+
+Advantages:
+-Standared template where all QA can stick to one common stadards of defning testcases
+- each senario reflects a Business value
+- We ca tag annotation to selenium automtion and execute the testases
+- Estimate the test coverage happened
+- Commom standared testcase template for both manual ans automation testing.
+
+Download cucumber :
+Eclips -> help-> market place - > serch - Natural and install
+
+Cucumber supports maven.architype.QUICK.START
+Group id : package name
+Artifact id : Project name
+
+dipendencies :
+1. cuumber.java
+2. cucumber junit
+
+(Main core part of CUCUMBER)
+CUCUMBER Terminologies :
+Feature files   - TestCases , what need to be automated
+StepDefinaion  - How to automate
+Junit TestRunner - To start ans trigger we use TestRunner
+(Gherkin)
+Make sure create feature files inside test/java
+StepDefinaion should be under  test/java folder
+- for every testcase in featre file will have respective step description method will be declared.
+- Tidy gherkin plugin will generae the step description automatically for the property file testcases.
+- there should be one mapping implimentation for each Gherkin line
+- cucumber options in testrunner: features path and glue
+- Regular expression for different data and same implimetation
+- Arguments shoud match with regule expression caught values
+- 
+
+

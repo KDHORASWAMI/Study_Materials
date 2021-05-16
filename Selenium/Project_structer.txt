@@ -1,0 +1,42 @@
+
+0. Base Class
+	
+1. Page Object
+	IndexPage
+	LoginPage
+	HomePage
+	ProductPage
+	AddtoCart
+2. ActionDriver
+	Scoll
+	click
+	SendKeys
+	Selet
+	Waits
+3. Utility Components
+	util-screenshot
+	Etent class
+	LoginPageLteners
+	DtaProvider
+4. Config com
+	POM.xml
+	etent-config.xml
+	log4j.xml
+	config.properties
+	testNG.xml
+5. Folders
+	TestData
+	ScreenShot
+	Configuraton
+	Drivers
+	Logs
+	ExtentReports
+6. com.mystore.testcase
+	LoginPage
+	HomePage
+	AddtoCart
+7  TestNG.xml
+8. POM.xml
+9. Git and GitHUB
+10. Jenkins CI tool
+	

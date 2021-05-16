@@ -1,0 +1,96 @@
+API - Application program interface
+It act as an interface or communication protocol between clint(fontend) and serer(backend)
+API is independent of any langualge
+Data will be send by using JSON / XML formate to API 
+REST - is arhitectural design to create APIs
+
+Step - Endpoint / BAse URI
+HTTP methods: 
+GET,POST,DELETE and PUT to commuicate with REST APIs
+GET: To exract information from the server
+POST : Insert into server
+PUT : Update the informaton in server
+DELETE : Delete informion in server
+
+Resources:
+Resources arepresents API/ Collection which can be accessed from te server
+Prameters:
+1.Path parameter - 
+2.Query Parameter
+
+End point Request URL can be constructed as below:
+Base URL/resource/(Query/path)Parameters
+
+POSTMAN - manual testing of API
+API contract - Basic details to proceed API testing.
+
+Base URL: https://rahulshettyacademmy.com
+Resource : /maps/api/place/add/json
+Query Parameter : key=quick123
+Http method: POST
+
+To practice 
+E:\COURSES\REST_API\Postman_APIContract
+
+some packages are static in REST_Assured
+to accept json as a string in jaca
+Windows -> peferences -> editer -> typing ......
+
+Eclips will not give auto suggession for static packages
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+JsonPath - class is used to convert string to Json format...(if we want to extract specific field in json file)
+
+Exmple : Complex Json parsing:
+1. Print No of courses returned by API
+2.Print Purchase Amount
+3. Print Title of the first course
+4. Print All course titles and their respective Prices
+5. Print no of copies sold by RPA Course
+6. Verify if Sum of all Course prices matches with Purchase Amount
+
+Advaned Payload creation strategies:
+
+Read Json file :
+.body(new String(Files.readAllBytes(Paths.get("Json file path"))))
+// readAllBytes  - will read the json file in the form or byte
+// String()  - will convert byte data into String format
+JIRA: 
+https://kdhoraswami.atlassian.net/jira/software/c/projects/E2E/issues/   - open JIRA in Browser
+
+port number : 8088
+Control port number : 8005
+
+-multipart - is used to send the file in REST assured
+-Limiting Json response through query parameter 
+-given().relaxedHTTPSValidation() - is used to bypass the https authentiction
+
+OAuth 2.0 :
+Login into Bookmyshow using gmail without signUp into bookmyshow
+Requirements:
+1. Client	: Bookmyshow
+2. Client ID
+3. Client secret ID		- which is provided by Google
+4. Resource Owner
+
+Access token place a majar role in Oauth
+5. Resorce/Athentication server		: Google
+Parameters used:
+scope : get it from te client or developer
+Auh_URL: Authentication url get it from client
+
+Mandatory fields for GetAutjorization code Request:
+
+End Poin: Authorization server URL
+Query Parameter: Scope,Auth_URL,client_id,response_typr,redirect_URL
+- This operation should perform on browser
+Output: Code
+
+Mandatory fields for GetAccessToken request:
+End point: Access token URL
+Query Params: Code, Cliend_id, client secret, redirect_URL, grant_type
+Output: Access token
+
+
+

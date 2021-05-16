@@ -1,0 +1,190 @@
+If we have included dependency in maven for drivers.
+	WebDriverManager.chromedriver().setup();
+	no need to setProperty for webdriver
+1. Importance of Locators
+2. Locator spport by Selenium
+
+	1. ID
+	2. ClassName
+	3. Name
+	4. LinkText
+	5. PartialLink
+	6. Tagname
+	7. Xpath
+	8. CSS
+
+Syatem.setProperty("webdriver.chrome.driver","c://work//chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+driver.get("www.google.com");
+
+3. Every object may not have ID, className or name , Xpath and css prefered.
+4. Alphanumeric id vary on every refresh check.
+
+5. Validating using browser console -
+
+	Xpath:
+	$x[""] - provide Xpath
+	
+	CssSelector:
+	$[""]- Provide CSS
+	
+6. there is no direct way to get CSS in chrome 
+
+	to find child using CSS which have only tag names 
+		Paret div:nth-child(3)	-> 
+
+7. Customized Xpath:
+	Systax : //tagname[@attribute='value']
+			 //*[@attribute='value']
+			 
+			 //tagname[conains(@attribute,'part of value')]
+
+8. Customized CSS:
+	Syntax : tagname[attribute='value']
+			 *[attribute='value']
+			 tagname.class
+
+9. Parent child relationship Xpath - Define Xpath for parent/tages
+		Ex : //iv[@id='passwd']/div/div[2]/div/input
+10. Differennce between Relative and Absolute Xpth?
+	
+	Relative - it doesn't depends on parent tag
+	Absolute - it depends on parent -> parent/child
+	
+11. Finding the parent/chaild sibling nodes using Xpath
+
+	//tgname[@attribute='vlaue']/div/following-sibling::li[2]
+	
+12. Finding the parent Xpath using child   - it is possible only with Xpath ,not using CSS
+
+	//tagname[@attribute='value']/parent::li[2]  - li is attribute for example
+	
+13. Identifying element using text value...
+
+	Syntax : //[text()='vlue']
+	
+14. if we have multile elemets for the one Xpath use the following concepte
+
+	//tagname[@ttribute='value'] //tagname[@ttribute='value']
+		(parent xpath)   followed by space	(child xpath)
+		
+15. To find the no of checkboxes in the  page.
+
+	- find the common locator for all the checkboxes 
+	
+		driver.findElements(BY.xpath(//input[@type='checkbox'])).size();
+	- findElements will return all the elements of checkboxes 
+	
+	- In a webpage, if there are three elements with same xpath value, 
+	how do we explicitly identify the third element on the page with the help of index. 
+	Let us consider, the matching xpath be //input[@name=’Selenium’]
+	--(//input[@name=’Selenium’])[3]
+	
+	
+16. Assert are used to validate in the testing
+
+	- Assert are present in TestNG library.
+
+17. Alert : need to swith to allert window...
+	
+	- driver.switchTo().alert().accept();
+18. Frames- 
+	-finding no of frame in the webpage - (By.Tagname('iframe')).size();
+	-Switch to frames - driver.switchTo().frames();
+	- To come out of frame
+		switchTo().defaultContent();
+	- If there are 3 frames and need to switch to 2nd frame	
+		switchTo().frame(1);
+		
+19. Syncronizatioon in Selenium:
+
+	- Implicit wait
+	- Explicit wait
+	- Thread.sleep
+	- Fluent wait 
+	
+	- Difference between inplicit and Explicit wait;
+	Implicit wait: 
+		Define wait time Globally....
+		Wait for n number of seconds before throw exception...
+		
+		driver.manage().timeout().inplicitlyWait(5,TimeUnits.SECONDS)
+			
+	Exlicit wait:
+		We can target specific element.
+		
+		WebDriverWait w = new WebDriverWait(5);
+		w.util(ExpectedConditon.visibilityOfAllElemenLOcated(By.xpath("")));
+		
+	Thread.sleep:
+		Not prefored in the realtime.
+		
+20. Select clause;
+
+	Select dropdown = new Select("WebElement");
+21. Actions: 
+	MouseOver, Context click(Right click), searchbr click 
+	
+	Action a = new Action(Driver);
+	at last 
+	a.moveOver().build().perform();
+
+22. Windows Handle concept :
+
+	Set<String> windows = driver.getWindowHandles();	// will fech the all the windows headers opened in the Browser...
+	
+****************************************
+
+ Automating window control with selenium :
+ 
+ What is AutoIT
+ install AutoIT
+ AutoIT Scripting
+ Integratig AutoIT with selenium
+ 
+ EX: https://the-internet.herokuapp.com/
+ 
+23. Handling window Authentication pop up..
+	http://Username:Password@SiteURL
+	 Ex :http://admin:admin@the-internet.herokuapp.com/
+	 
+	Dowload AutoIT software....
+	
+	//Shift focus to the file upload windows
+	//set text/path into file name edit box
+	// click open to unload file
+	
+	Auto3info- record window component objects
+	Java code to read AutoIt script...
+- Runtime.getRuntime().exec();
+	Do not move the cursor if the AutoIT running....
+		Biuld sript -scite.exe
+		Save it .au3 extension
+		Convert file into .exe by compiling .au3 file
+		
+24. Code to download the file - selenium script
+	Verify if the file is successfully downloded
+	
+	
+
+
+
+
+	
+	
+		
+		
+		
+		
+
+	
+
+
+	
+			
+	
+	
+
+
+
+
